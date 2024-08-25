@@ -8,7 +8,7 @@ function Form() {
   const { register, handleSubmit, reset } = useForm();
 
   // State to manage the display of the success message
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(true);
 
   // Function to handle form submission
   const submit = async (data) => {
@@ -95,7 +95,7 @@ function Form() {
 
       {/* Display the success message after submission */}
       {isSubmitted && (
-        <div className="text-center top-[21rem] left-[4rem] absolute text-white border-2 rounded-full p-3 mt-4">
+        <div className="text-center  top-[21rem] left-[4rem] absolute text-white border-2 rounded-full p-3 mt-4 ml-2 max-md:text-[13px]">
           Your message has been sent
         </div>
       )}
