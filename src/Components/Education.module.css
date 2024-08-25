@@ -1,0 +1,102 @@
+
+
+
+
+.timelineBox{
+  margin: 0px;
+  width: 40%;
+  
+}
+
+.timelineBox:nth-child(2n+1){
+  left:5%;
+  top:4%;
+}
+
+
+.timelineBox:nth-child(2n){
+  left:55%;
+  top:7%;
+}
+
+
+.timelineBox:nth-child(2n+1)::before {
+  content: '';
+  position: absolute;
+  top: 19%;
+  left:112%;
+  border-radius: 50%;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: red;
+  z-index: 1;
+}
+.timelineBox:nth-child(2n)::before {
+  content: '';
+  position: absolute;
+  top: 8%;
+  left: -13%;
+  border-radius: 50%;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: red;
+  z-index: 1;
+
+
+}
+
+
+
+.timelineDivider{
+  position: absolute;
+  height: 68%;
+  width:0;
+  border: 3px dashed #0096fa6b;
+  /* z-index: 1; */
+  top: 8%;
+  left: 50%;
+}
+.timelineTraveller{
+  position: sticky;
+  top:64%;
+  transform: rotate(90deg);
+  z-index: 4;
+
+  
+}
+
+
+
+
+@media screen and (max-width:687px){
+
+  .timelineDivider {
+    left: 5%;
+  }
+
+  .timelineBox{
+    width: 80%
+  }
+
+  .timelineBox:nth-child(2n+1){
+    left: 12%;
+  }
+
+  .timelineBox:nth-child(2n){
+    left: 12%;
+  }
+
+  
+
+  .timelineBox:nth-child(2n+1)::before{
+    left: -11%;
+  }
+
+
+  .timelineBox:nth-child(2n)::before{
+    left: -11%;
+  }
+
+
+
+}
