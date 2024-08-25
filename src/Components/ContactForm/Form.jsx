@@ -8,7 +8,7 @@ function Form() {
   const { register, handleSubmit, reset } = useForm();
 
   // State to manage the display of the success message
-  const [isSubmitted, setIsSubmitted] = useState(true);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   // Function to handle form submission
   const submit = async (data) => {
@@ -57,7 +57,7 @@ function Form() {
 
   return (
     <>
-    <div className="relative ">
+    <div className="relative max-md:mb-[42px]">
       {/* Form component with onSubmit event handled by handleSubmit and submit function */}
       <form
         onSubmit={handleSubmit(submit)}
