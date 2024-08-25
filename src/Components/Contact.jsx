@@ -34,7 +34,7 @@ function Contact() {
         <TbSquareRoundedArrowUp className="absolute left-[90%] top-[75%] max-md:top-[88%] max-md:left-[85%] text-gray-400 text-[300%] "></TbSquareRoundedArrowUp>
         </Link>
 
-        <div className="flex justify-center max-sm:mt-2 text-[5rem] mt-3 gap-2 text-white">
+        <div className="flex justify-center max-sm:mt-2 text-[5rem] mt-3 gap-2 text-white max-md:text-[4rem]">
           <Link
             to="https://github.com/Vishalnce"
             target="_blank"
